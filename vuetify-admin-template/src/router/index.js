@@ -3,30 +3,42 @@ import VueRouter from 'vue-router'
 import Dashboard from '@/views/Dashboard'
 import GridSystem from '@/views/GridSystem'
 import GirdListPage from '@/views/GridListPage'
+import Breakpoints from '@/views/Breakpoints'
+import Typography from '@/views/Typography'
 
 Vue.use(VueRouter);
 
 const routes = [
-    {
-        path: '/',
-        name: 'Dashboard',
-        component: Dashboard
-    },
-    {
-        path: '/grid-system',
-        name: 'GridSystem',
-        component: GridSystem
-    },
-    {
-      path: '/grid-list-page',
-      name: 'GirdListPage',
-      component: GirdListPage
+  {
+    path: '/',
+    name: 'Dashboard',
+    component: Dashboard
+  },
+  {
+    path: '/grid-system',
+    name: 'GridSystem',
+    component: GridSystem
+  },
+  {
+    path: '/grid-list-page',
+    name: 'GirdListPage',
+    component: GirdListPage
+  },
+  {
+    path: '/breakpoints',
+    name: 'Breakpoints',
+    component: Breakpoints
+  },
+  {
+    path: '/typography',
+    name: 'Typography',
+    component: Typography
   },
 ]
 
 const router = new VueRouter({
-    mode: 'history',
-    routes
+  mode: 'history',
+  routes
 })
 
 export default router;

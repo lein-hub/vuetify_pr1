@@ -64,16 +64,18 @@
 
     <v-card class="mt-5">
       <v-card-title>
-            Vuetify Breakpoint Object
-          </v-card-title>
+        Vuetify Breakpoint Object
+      </v-card-title>
       <v-container class="grey lighten-1">
-        <v-card class="mt-5" outlined>
+        <v-card
+          class="mt-5"
+          outlined
+        >
           $vuetify.breakpoint.xs: {{ $vuetify.breakpoint.xs }} <br>
           $vuetify.breakpoint.smAndDown: {{ $vuetify.breakpoint.smAndDown }} <br>
           $vuetify.breakpoint.height: {{ $vuetify.breakpoint.height }} <br>
           $vuetify.breakpoint.width: {{ $vuetify.breakpoint.width }} <br>
           $vuetify.breakpoint.thresholds: {{ $vuetify.breakpoint.thresholds }} <br>
-
         </v-card>
       </v-container>
     </v-card>

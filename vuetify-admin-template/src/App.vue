@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <v-fade-transition>
+    <router-view />
+  </v-fade-transition>
 </template>
 
 <script>

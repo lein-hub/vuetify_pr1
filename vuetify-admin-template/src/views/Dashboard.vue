@@ -51,11 +51,14 @@
           </v-sheet>
         </v-card>
       </v-col>
-      <v-col v-for="count in 4" :key="count"
-      cols="12"
-      sm="6"
-      md="4"
-      lg="3">
+      <v-col
+        v-for="count in 4"
+        :key="count"
+        cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+      >
         <v-card
           class="mx-auto text-center"
           color="green"

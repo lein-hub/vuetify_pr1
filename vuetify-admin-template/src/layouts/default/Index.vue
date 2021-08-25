@@ -2,7 +2,9 @@
   <v-app>
     <default-bar @drawer="drawer = !drawer" />
     <default-drawer v-model="drawer" />
-    <default-view />
+    <v-fade-transition>
+      <default-view />
+    </v-fade-transition>
   </v-app>
 </template>
 

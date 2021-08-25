@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <authentication-view />
+    <v-fade-transition>
+      <authentication-view />
+    </v-fade-transition>
   </v-app>
 </template>
 

@@ -10,7 +10,13 @@
     <template
       v-for="(child, i) in item.items"
     >
+      <default-list-group
+        v-if="child.items"
+        :key="`sub-group-${i}`"
+        :item="child"
+      />
       <default-list-item
+        v-else
         :key="`child-${i}`"
         :item="child"
       />
@@ -22,11 +28,13 @@
 
 <script>
 import DefaultListItem from './NavListItem.vue'
+import DefaultListGroup from './NavListGroup.vue'
 
 export default {
   name: 'DefaultListGroup',
   components: {
-    DefaultListItem
+    DefaultListItem,
+    DefaultListGroup
   },
   props: {
     item: {

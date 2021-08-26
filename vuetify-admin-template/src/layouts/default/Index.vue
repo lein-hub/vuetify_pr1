@@ -16,9 +16,9 @@ import DefaultView from './View.vue'
 export default {
   name: 'DefaultLayout',
   components: {
-    DefaultBar,
-    DefaultDrawer,
-    DefaultView
+    DefaultBar: () => import(/* webpackChunkName: "views-default" */'./AppBar.vue'),
+    DefaultDrawer: () => import(/* webpackChunkName: "views-default" */'./NavDrawer.vue'),
+    DefaultView: () => import(/* webpackChunkName: "views-default" */'./View.vue')
   },
   data () {
     return {

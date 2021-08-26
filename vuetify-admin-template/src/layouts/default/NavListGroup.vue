@@ -33,8 +33,8 @@ import DefaultListGroup from './NavListGroup.vue'
 export default {
   name: 'DefaultListGroup',
   components: {
-    DefaultListItem,
-    DefaultListGroup
+    DefaultListItem: () => import(/* webpackChunkName: "views-default" */'./NavListItem.vue'),
+    DefaultListGroup: () => import(/* webpackChunkName: "views-default" */'./NavListGroup.vue')
   },
   props: {
     item: {

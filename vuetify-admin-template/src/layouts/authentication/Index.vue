@@ -12,7 +12,7 @@ import AuthenticationView from './View.vue'
 export default {
   name: 'AuthenticationLayout',
   components: {
-    AuthenticationView
+    AuthenticationView: () => import(/* webpackChunkName: "views-authentication" */'./View.vue')
   }
 }
 </script>

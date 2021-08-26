@@ -28,8 +28,8 @@ import DefaultListGroup from './NavListGroup.vue'
 export default {
   name: 'DefaultDrawerList',
   components: {
-    DefaultListItem,
-    DefaultListGroup
+    DefaultListItem: () => import(/* webpackChunkName: "views-default" */'./NavListItem.vue'),
+    DefaultListGroup: () => import(/* webpackChunkName: "views-default" */'./NavListGroup.vue'),
   },
   props: {
     items: {

@@ -5,7 +5,7 @@
         <v-card width="480">
           <v-card-text class="text-center px-12 py-10">
             <div class="text-h4 font-weight-black mb-10">
-              로그인
+              회원가입
             </div>
             <v-text-field
               v-model="email"

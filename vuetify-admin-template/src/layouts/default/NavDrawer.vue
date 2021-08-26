@@ -24,14 +24,12 @@
 
 
 <script>
-import DefaultDrawerHeader from './NavHeader.vue'
-import DefaultDrawerList from './NavList.vue'
 
 export default {
   name: 'DefaultDrawer',
   components: {
-    DefaultDrawerHeader,
-    DefaultDrawerList
+    DefaultDrawerHeader: () => import(/* webpackChunkName: "views-default" */'./NavHeader.vue'),
+    DefaultDrawerList: () => import(/* webpackChunkName: "views-default" */'./NavList.vue'),
   },
   data() {
     return {

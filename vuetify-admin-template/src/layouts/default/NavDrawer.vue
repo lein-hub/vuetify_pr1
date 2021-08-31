@@ -47,8 +47,14 @@ export default {
         { title: 'Grid List Page', icon: 'mdi-view-list-outline', to:'/grid-list-page' },
         { title: 'Breakpoints', icon: 'mdi-responsive', to:'/breakpoints' },
         { title: 'Typography', icon: 'mdi-format-text-variant-outline', to:'/typography' },
-        { title: 'Tables', icon: 'mdi-table', to:'/tables' },
-        { title: 'Forms', icon: 'mdi-book-information-variant', to:'/forms' },
+        { title: 'Tables', icon: 'mdi-table', items: [
+          { title: 'Basic Table', icon: 'mdi-login', to:'/tables/basic-table' },
+          { title: 'App Table', icon: 'mdi-logout', to:'/tables/app-table' },
+        ] },
+        { title: 'Forms', icon: 'mdi-book-information-variant', items: [
+          { title: 'Validation Form', icon: 'mdi-login', to:'/forms/validation-form' },
+          { title: 'App Form', icon: 'mdi-logout', to:'/forms/app-form' },
+        ] },
         { title: 'Buttons', icon: 'mdi-gesture-tap-button', to:'/buttons' },
         { title: 'Icons', icon: 'mdi-emoticon-wink-outline', to:'/icons' },
       ],

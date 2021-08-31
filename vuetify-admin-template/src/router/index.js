@@ -1,21 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Dashboard from '@/views/Dashboard'
-import GridSystem from '@/views/GridSystem'
-import GirdListPage from '@/views/GridListPage'
-import Breakpoints from '@/views/Breakpoints'
-import Typography from '@/views/Typography'
-import Tables from '@/views/Tables'
-import Forms from '@/views/Forms'
-import Buttons from '@/views/Buttons'
-import Icons from '@/views/Icons'
-// import Test from '@/views/Test'
-// import SignIn from '@/views/authentication/SignIn'
-// import SignUp from '@/views/authentication/SignUp'
-import ProductList from '@/views/page/ProductList'
-import DefaultLayout from '@/layouts/default/Index'
-import PageLayout from '@/layouts/page/Index'
-import AuthenticationLayout from '@/layouts/authentication/Index'
 
 const Test = function (resolve, reject) {
   return import('@/views/Test')
@@ -62,14 +46,24 @@ const routes = [
         component: () => import(/* webpackChunkName: "Typography" */'@/views/Typography')
       },
       {
-        path: '/tables',
-        name: 'Tables',
-        component: () => import(/* webpackChunkName: "Tables" */'@/views/Tables')
+        path: '/table/basic-table',
+        name: 'BasicTables',
+        component: () => import(/* webpackChunkName: "basic-table" */'@/views/table/BasicTables')
       },
       {
-        path: '/forms',
-        name: 'Forms',
-        component: () => import(/* webpackChunkName: "Forms" */'@/views/Forms')
+        path: '/table/app-table',
+        name: 'AppTables',
+        component: () => import(/* webpackChunkName: "app-table" */'@/views/table/AppTables')
+      },
+      {
+        path: '/forms/validation-form',
+        name: 'ValidationForms',
+        component: () => import(/* webpackChunkName: "validation-forms" */'@/views/form/ValidationForms')
+      },
+      {
+        path: '/forms/app-form',
+        name: 'AppForms',
+        component: () => import(/* webpackChunkName: "app-forms" */'@/views/form/AppForms')
       },
       {
         path: '/buttons',

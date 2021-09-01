@@ -6,7 +6,11 @@
         :headers="headers"
         :items="desserts"
         :items-per-page="5"
-      />
+      >
+        <div slot="top">
+          Hello World
+        </div>
+      </app-data-table>
     </v-card>
   </v-container>
 </template>

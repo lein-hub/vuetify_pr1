@@ -46,12 +46,12 @@ const routes = [
         component: () => import(/* webpackChunkName: "Typography" */'@/views/Typography')
       },
       {
-        path: '/table/basic-table',
+        path: '/tables/basic-table',
         name: 'BasicTables',
         component: () => import(/* webpackChunkName: "basic-table" */'@/views/table/BasicTables')
       },
       {
-        path: '/table/app-table',
+        path: '/tables/app-table',
         name: 'AppTables',
         component: () => import(/* webpackChunkName: "app-table" */'@/views/table/AppTables')
       },
